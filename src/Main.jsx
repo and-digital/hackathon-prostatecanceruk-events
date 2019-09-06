@@ -2,21 +2,19 @@ import React from 'react';
 import svg from './assets/images/logo.jpg'
 
 import race from './assets/images/race.png'
-
+import Faq from './components/Faq';
 
 export default function() {
     return (
-        <header class="primary">
             <div role="banner">
-                <div class="secondary-container">
-
-                </div>
-                <div class="logo-phone-search">
+                <div class="main-content">
+               
+                
                     <a class="logo" href="/">
-                        <img src={svg} width="300px"/>
+                        <img src={svg} width="100%"/>
                     </a>
                     <div>
-                        <img src={race} width="300px"/>
+                        <img src={race} width="100%"/>
                         <h2>Cardiff Half Marathon</h2>
                         <h4>October 6, 2019</h4>
                     </div>
@@ -36,16 +34,31 @@ export default function() {
                         <ul class="square">
                             <li >
                                 <div class="itinerary-item">
-                                Pre-race Photo
-                                Pre-race Photo
-                                Pre-race Photo
+                                    <div>Pre-race Photo</div>
+                                    <div><a class="desc-link">Prostate Cancer Marquee #2563</a></div>
+                                    <div class="time">8:00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itinerary-item">
+                                    <div>Start Race</div>
+                                    <div><a class="desc-link">Race Starting Line</a></div>
+                                    <div class="time">9:00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itinerary-item">
+                                    <div>Wave at cheer point</div>
+                                    <div><a class="desc-link">Mile 6 marker</a></div>
+                                    <div class="time">10:30</div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-
-                </div>
+                    </div>
+                    <Faq />
+                
             </div>
-        </header>
+       
     )
 }

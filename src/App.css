@@ -4,10 +4,15 @@ body {
 
 .App {
   min-height: 100vh;
-  margin: 20px auto;
-  width: 90%;
+  /* margin: 20px auto; */
+
   color: white;
   font-family: "Avenir";
+}
+
+.main-content {
+  margin: 20px auto;
+  width: 90%;
 }
 
 .App-link {
@@ -36,12 +41,85 @@ hr {
 
 .itinerary-item {
   font-size: 18px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.square li {
+  position: relative;
 }
 
 .square li::before {
-  left: 0;
+  left: -1em;
   content: "■";
   position: absolute;
   /* right: 0; */
   top: -0.1em;
+}
+
+.desc-link {
+  text-decoration: underline;
+  color: lightgreen;
+  font-size: 16px;
+}
+
+.time {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.faq-header {
+  background-color: #1191c9;
+  color: black;
+  padding: 10px;
+}
+
+.faq-list {
+  position: relative;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  color: black;
+  background-color: lightgrey;
+}
+
+.faq-list li {
+  border-top: 3px solid grey;
+  padding: 10px 20px;
+  list-style-type: none;
+  position: relative;
+}
+
+.faq-list li::after {
+  position: absolute;
+  content: "+";
+  right: 0;
+  top: 0;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  display: table-cell;
+  font-size: 42px;
+  line-height: 42px;
+}
+
+.faq-list li.active::after {
+  content: "-";
+}
+
+.faq-list li:last-child {
+  border-bottom: 3px solid grey;
+}
+
+.answer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq-section {
+  padding-bottom: 20px;
 }
