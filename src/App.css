@@ -1,0 +1,47 @@
+body {
+  background-color: #000;
+}
+
+.App {
+  min-height: 100vh;
+  margin: 20px auto;
+  width: 90%;
+  color: white;
+  font-family: "Avenir";
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+h2,
+h3,
+h4 {
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}
+
+hr {
+  margin-block-start: 15px;
+  margin-block-end: 15px;
+}
+
+.square {
+  font-size: 40px;
+  list-style-type: none;
+  font-size: 40px;
+  /* line-height: 12px; */
+  position: relative;
+}
+
+.itinerary-item {
+  font-size: 18px;
+}
+
+.square li::before {
+  left: 0;
+  content: "■";
+  position: absolute;
+  /* right: 0; */
+  top: -0.1em;
+}
