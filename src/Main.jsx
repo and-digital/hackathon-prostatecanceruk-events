@@ -53,6 +53,20 @@ export default function() {
                                     <div class="time">10:30</div>
                                 </div>
                             </li>
+                            <li>
+                                <div class="itinerary-item">
+                                    <div>Finish Race</div>
+                                    <div><a class="desc-link">Finishing Line</a></div>
+                                    <div class="time">16:00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itinerary-item">
+                                    <div>Post-race Reception</div>
+                                    <div><a class="desc-link">Tiny Rebel Cardiff</a></div>
+                                    <div class="time">17:00-19:00</div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     </div>
