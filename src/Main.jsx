@@ -30,7 +30,7 @@ export default function() {
                         </ul>
                         </div>
                         <hr/>
-                    <div>
+                    <div style={{ position: "relative" }}>
                         <ul class="square">
                             <li >
                                 <div class="itinerary-item">
